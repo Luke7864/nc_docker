@@ -6,7 +6,8 @@ CTF와 워게임의 포너블 문제를 위한 nc서버를 자동으로 docker�
 1. install_requirement.sh파일을 이용하여 필수설정을 설치해줍니다.
 2. 만약 도커가 설치되어있지 않은 경우 docker_install.sh파일을 이용해 도커를 설치해 줍니다.
 3. password 파일을 이용하여 password를 설정해줍니다. 외부인의 접근을 방지하기 위해 password파일은 접속링크의 일부로 사용됩니다.
-4. run.sh파일을 실행해 줍니다.
+4. nc 서버의 포트는 8000번에서부터 자동으로 1씩 추가되며 설정됩니다. 만약 포트가 중복되는 등의 이유로 다른 포트를 사용하고 싶다면 반드시 최초 실행 전에 port.txt파일을 수정해 시작할 포트의 번호로 세팅해주셔야 합니다. 한 번이라도 실행이 된 이후에는 port.txt파일을 건드리지 않는 것을 권유해 드립니다.
+5. run.sh파일을 실행해 줍니다.
 
 기능:
 1. (호스트):12345/(password.txt 내용) => 일반적인 바이너리(예:http://test.com:12345/thisispassword)
@@ -35,7 +36,8 @@ How to use:
 1. Install the required settings using the install_requirement.sh file.
 2. If the driver is not installed, use the docker_install.sh file to install the docker.
 3. Set password using password file. To prevent access by outsiders, the password file is used as part of the connection link.
-4. Run the run.sh file.
+4. The ports of nc server are automatically added and set from 8000. If you want to use another port because of duplicate port, you must modify the port.txt file before the first run to set the port number to start. We recommend that you do not touch the port.txt file after it has been run once.
+5. Run the run.sh file.
 
 function:
 1. (host:12345/(contents of password.txt) => general binary (for example, http://test.com:12345/thisispassword)
