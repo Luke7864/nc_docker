@@ -1,0 +1,24 @@
+﻿<html>
+<head>
+<title>NC 서버 원격 업로드</title>
+</head>
+
+<body>
+<h1>KorNewbie NC서버 업로드 서비스</h1>
+<h1>해당 웹은 일반적인 바이너리 파일만 업로드하셔야 정상작동합니다. 파이썬은 분리된 파이썬 서비스를 이용해주세요.</h1>
+<p>아래에 문제 명을 적고, 바이너리와 flag파일을 넣으면 그대로 바이너리 파일이 NC에서 실행됩니다.</p>
+<p>포트의 경우 처리가 완료되면, 결과 확인 창에서 사용되는 포트를 알려드립니다.</p>
+<p>_와 -를 제외한 특수문자는 사용이 불가능합니다.</p>
+<h5>해당 서비스에 업로드한다고 CTFd에 업로드 되는 것은 아닙니다. CTFd에는 직접 업로드해주시기 바랍니다.</h5>
+<h3>flag파일을 사용하지 않더라도 아무거나 파일을 flag파일로 만들어(빈파일 가능) 업로드해주시기 바랍니다.</h3>
+<h3>제작자: 신재욱(Y311J, http://jaeuk.xyz)</h3>
+<br>
+<br>
+<form action=".{{link}}" method="post" enctype="multipart/form-data"><br><br>
+문제명 <input type="text" name="name"><br><br>
+바이너리 <input type="file" name="binary"><br><br>
+flag 파일 <input type="file" name="flag"><br><br>
+<input type="submit">
+</form>
+</body>
+</html>
