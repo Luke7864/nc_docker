@@ -8,6 +8,11 @@ CTF와 워게임의 포너블 문제를 위한 nc서버를 자동으로 docker�
 3. password 파일을 이용하여 password를 설정해줍니다. 외부인의 접근을 방지하기 위해 password파일은 접속링크의 일부로 사용됩니다.
 4. run.sh파일을 실행해 줍니다.
 
+기능:
+1. (호스트):12345/(password.txt 내용) => 일반적인 바이너리(예:http://test.com:12345/thisispassword)
+2. (호스트):12345/(password.txt 내용)/python2 => 파이썬2 바이너리 (예:http://test.com:12345/thisispassword/python2)
+3. (호스트):12345/(password.txt 내용)/python3 => 파이썬3 바이너리 (예: http://test.com:12345/thisispassword/python3)
+
 주의 사항:
 1. 해당 프로그램의 작동은 반드시 sudo를 사용 가능한 권한이 있는 사용자로 진행하여야 합니다.
 2. 상업적 용도가 아닌 소스코드 변형 및 사용은 원 저작자명(신재욱) 표기 하에 사용이 가능합니다.
@@ -31,6 +36,11 @@ How to use:
 2. If the driver is not installed, use the docker_install.sh file to install the docker.
 3. Set password using password file. To prevent access by outsiders, the password file is used as part of the connection link.
 4. Run the run.sh file.
+
+function:
+1. (host:12345/(contents of password.txt) => general binary (for example, http://test.com:12345/thisispassword)
+2. (host:12345/(contents of password.txt)/python2 => Python 2 binaries (eg http://test.com:12345/thisispassword/python2)
+3. (host:12345/(contents of password.txt)/python3 => Python 3 binaries (eg http://test.com:12345/thisispassword/python3)
 
 Precautions:
 1. The operation of the program must be performed by a user who has the authority to use sudo.
