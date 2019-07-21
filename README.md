@@ -44,4 +44,4 @@ Resolving the error:
 Miscellaneous: 
 1. I am not responsible for any incidents that occur using the software.
 2. Please report POC, fix plan and shin@jaeuk.xyz when vulnerability occurs.
-3. This translation has been translated by Google and may contain errors. I am not responsible for any linguistic errors.
+3. This translation has been translated by Google and may contain errors. I am not responsible for any linguistic errors. 
