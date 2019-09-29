@@ -3,7 +3,6 @@ import subprocess
 from string import ascii_lowercase,ascii_uppercase
 
 listallow=list(ascii_lowercase)
-listallow+=list(ascii_uppercase)
 listallow+=['_','-']
 listallow+=['1','2','3','4','5','6','7','8','9','0']
 
@@ -51,7 +50,7 @@ def connect():
         try:
             for i in range(len(name)):
                 if list(name)[i] not in listallow:
-                    return "NO Hack~~!, 특수문자 입력은 금지되어 있습니다."
+                    return "NO Hack~~!, 특수문자/대문자 입력은 금지되어 있습니다."
 
             probmake = subprocess.check_output(["mkdir /home/probs/"+name], shell=True)
             homemake = subprocess.check_output(["mkdir /home/probs/"+name+"/home"], shell=True)
@@ -140,7 +139,7 @@ def connect2():
         try:
             for i in range(len(name)):
                 if list(name)[i] not in listallow:
-                    return "NO Hack~~!, 특수문자 입력은 금지되어 있습니다."
+                    return "NO Hack~~!, 특수문자/대문자 입력은 금지되어 있습니다."
 
             probmake = subprocess.check_output(["mkdir /home/probs/"+name], shell=True)
             homemake = subprocess.check_output(["mkdir /home/probs/"+name+"/home"], shell=True)
@@ -214,7 +213,7 @@ def connect2():
             return "도커 실행중 오류가 생겼습니다."
 
         host=request.host
-        host=host.replace(":5000","")
+        host=host.replace(":12345","")
         return "PORT가 설정되었습니다!\nnc "+host+" "+save_port
 
 @app.route(password+'/python3', methods=['POST', 'GET'])
@@ -233,7 +232,7 @@ def connect3():
         try:
             for i in range(len(name)):
                 if list(name)[i] not in listallow:
-                    return "NO Hack~~!, 특수문자 입력은 금지되어 있습니다."
+                    return "NO Hack~~!, 특수문자/대문자 입력은 금지되어 있습니다."
 
             probmake = subprocess.check_output(["mkdir /home/probs/"+name], shell=True)
             homemake = subprocess.check_output(["mkdir /home/probs/"+name+"/home"], shell=True)
@@ -307,7 +306,7 @@ def connect3():
             return "도커 실행중 오류가 생겼습니다."
 
         host=request.host
-        host=host.replace(":5000","")
+        host=host.replace(":12345","")
         return "PORT가 설정되었습니다!\nnc "+host+" "+save_port
 
 
