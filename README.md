@@ -22,7 +22,8 @@ CTF와 워게임의 포너블 문제를 위한 nc서버를 자동으로 docker�
 
 오류해결:
 1. Fatal Security Error: 패스워드 파일을 수정하지 않아 기본 패스워드 일 경우 발생합니다. 패스워드를 수정해주세요.
-2. 그 외의 오류: 파일을 임의로 수정하거나 삭제할 경우 발생할 수 있습니다. 다시 설치해주세요.
+2. port.txt파일에 적혀있는 포트의 방화벽이 열려있나 확인해주세요.
+3. 그 외의 오류: 파일을 임의로 수정하거나 삭제할 경우 발생할 수 있습니다. 다시 설치해주세요.
 
 기타: 
 1. 저는 해당 소프트웨어를 사용하며 발생하는 모든 사건 사고에 대해 책임지지 않습니다.
@@ -53,7 +54,8 @@ Precautions:
 
 Resolving the error:
 1. Fatal Security Error: Occurs when the default password is not modified. Please correct your password.
-2. Other errors: It may occur when you randomly modify or delete a file. Please reinstall.
+2. Make sure the firewall for the port listed in the port.txt file is open.
+3. Other errors: It may occur when you randomly modify or delete a file. Please reinstall.
 
 Miscellaneous: 
 1. I am not responsible for any incidents that occur using the software.
