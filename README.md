@@ -4,6 +4,7 @@ CTF와 워게임의 포너블 문제를 위한 nc서버를 자동으로 docker�
 <h1>본 설명을 반드시 끝까지 읽은 뒤에 사용해주세요!</h1>
 
 본 서비스는 Ubuntu16.04LTS를 사용하여 테스트하였으며, 우분투 계열의 OS사용(적어도 데비안 계열의 OS)을 권장합니다.
+도커 위에 올라가는 이미지는 Ubuntu16.04입니다. 그 위에 바이너리가 올라가 돌아갑니다. 추후에 업데이트를 통해 Ubuntu18 역시 선택 가능하도록 지원할 계획입니다.
 
 사용법:   
 0. git clone https://github.com/Luke7864/nc_docker 해주세요.
@@ -40,6 +41,7 @@ It is a web-based tool that automatically creates an nc server for the CTF and w
 <h1>Please read this description thoroughly before using it!</h1>
 
 This service has been tested using Ubuntu16.04LTS, and we recommend using an Ubuntu OS (at least a Debian OS).
+The image going up over the docker is Ubuntu16.04. On top of that the binary goes up and runs. In future updates, Ubuntu18 will also be available for selection.
 
 How to use:  
 0. git clone https://github.com/Luke7864/nc_docker please.
