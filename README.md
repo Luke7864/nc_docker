@@ -1,6 +1,8 @@
 # nc_docker
 CTF와 워게임의 포너블 문제를 위한 nc서버를 자동으로 docker에 올려 생성해주는 웹 기반 툴입니다. 누구나 문제이름, 바이너리, flag만 입력하면 자동으로 netcat 서버가 도커위에서 생성되며, 주소와 포트를 할당해 출력합니다. 허가 없는 상업적 이용을 금합니다. 소스코드 변형 및 사용은 원 저작자 표기 하에 허용합니다.
 
+본 서비스는 Ubuntu16.04LTS를 사용하여 테스트하였으며, 우분투 계열의 OS사용(적어도 데비안 계열의 OS)을 권장합니다.
+
 사용법:   
 0. git clone https://github.com/Luke7864/nc_docker 해주세요.
 1. install_requirement.sh파일을 이용하여 필수설정을 설치해줍니다.
@@ -32,6 +34,8 @@ CTF와 워게임의 포너블 문제를 위한 nc서버를 자동으로 docker�
 
 
 It is a web-based tool that automatically creates an nc server for the CTF and wargame issue on the docker. If anyone types in the problem name, binary, or flag, the netcat server is automatically created on the docker, and the address and port are assigned and output. Unauthorized commercial use is prohibited. Source code variations and use are permitted under the original author notation.
+
+This service has been tested using Ubuntu16.04LTS, and we recommend using an Ubuntu OS (at least a Debian OS).
 
 How to use:  
 0. git clone https://github.com/Luke7864/nc_docker please.
