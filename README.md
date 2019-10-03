@@ -55,7 +55,7 @@ function:
 1. (host:12345/(contents of password.txt) => general binary (for example, http://test.com:12345/thisispassword)
 2. (host:12345/(contents of password.txt)/python2 => Python 2 binaries (eg http://test.com:12345/thisispassword/python2)
 3. (host:12345/(contents of password.txt)/python3 => Python 3 binaries (eg http://test.com:12345/thisispassword/python3)
-4. (host): 12345 / (password.txt content) / python3 => delete uploaded docker container and binaries (eg  http://test.com:12345/thisispassword/del)
+4. (host): 12345 / (password.txt content)/del => delete uploaded docker container and binaries (eg  http://test.com:12345/thisispassword/del)
 
 Precautions:
 1. The operation of the program must be performed by a user who has the authority to use sudo.
