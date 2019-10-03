@@ -18,7 +18,7 @@ CTF와 워게임의 포너블 문제를 위한 nc서버를 자동으로 docker�
 1. (호스트):12345/(password.txt 내용) => 일반적인 바이너리(예:http://test.com:12345/thisispassword)
 2. (호스트):12345/(password.txt 내용)/python2 => 파이썬2 바이너리 (예:http://test.com:12345/thisispassword/python2)
 3. (호스트):12345/(password.txt 내용)/python3 => 파이썬3 바이너리 (예: http://test.com:12345/thisispassword/python3)
-4. (호스트):12345/(password.txt 내용)/python3 => 올린 도커 컨테이너 및 바이너리 삭제 (예: http://test.com:12345/thisispassword/del)
+4. (호스트):12345/(password.txt 내용)/del => 올린 도커 컨테이너 및 바이너리 삭제 (예: http://test.com:12345/thisispassword/del)
 
 주의 사항:
 1. 해당 프로그램의 작동은 반드시 sudo를 사용 가능한 권한이 있는 사용자로 진행하여야 합니다.
