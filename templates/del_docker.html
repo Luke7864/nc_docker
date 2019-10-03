@@ -1,0 +1,25 @@
+﻿<html>
+<head>
+<title>NC 서버 원격 업로드</title>
+</head>
+
+<body>
+<h1>KorNewbie NC서버 삭제 서비스</h1>
+
+<h3>현재 만들어진 Docker 컨테이너</h3>
+{% autoescape false %}
+{{docker}}
+{% endautoescape %}
+
+<br>
+<br>
+<h3>삭제할 도커 컨테이너</h3>
+<p>삭제할 도커 컨테이너명<b>(컨테이너 ID아님!!)</b>을 입력하세요</p>
+<b>실수할 경우 다른 문제가 날라가오니 반드시 신중하게 입력하시기 바랍니다!</b>
+<form action="./del" method="post" enctype="multipart/form-data"><br><br>
+컨테이너명 <input type="text" name="doc_name">
+<br><br>
+<input type="submit">
+</form>
+</body>
+</html>
