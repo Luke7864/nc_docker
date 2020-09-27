@@ -20,9 +20,10 @@ try:
     password_file = open("./password.txt", 'r')
     password = str(password_file.read())
     password = password.replace("\n", "")
-    if password not in password_allow:
-        print("Error: Only English Letter and Numbers are allowed for Password")
-        exit(0)
+    for i in range(len(password)):
+                if list(password)[i] not in password_allow:
+                    print("Error: Only English Letter and Numbers are allowed for Password")
+                    exit(0)
     if len(password) < 10:
         print("Error: Please Set Password more than 10 letters")
         exit(0)
