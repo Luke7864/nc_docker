@@ -15,6 +15,7 @@ CTF와 워게임의 포너블 문제를 위한 nc서버를 자동으로 docker�
 <strong><u>*password파일은 반드시 영문 혹은 숫자로만 이루어져야 합니다!*</u></strong>
 4. nc 서버의 포트는 20000번에서부터 자동으로 1씩 추가되며 설정됩니다. 만약 포트가 중복되는 등의 이유로 다른 포트를 사용하고 싶다면 반드시 최초 실행 전에 port.txt파일을 수정해 시작할 포트의 번호로 세팅해주셔야 합니다. 한 번이라도 실행이 된 이후에는 port.txt파일을 건드리지 않는 것을 권유해 드립니다.
 5. run.sh파일을 실행해 줍니다.
+6. 웹서버를 중지시키기 위해서는 kill.sh 를 실행하여주시면 프로세스가 종료됩니다.
 
 기능:
 1. (호스트):12345/(password.txt 내용) => 일반적인 바이너리(예:http://test.com:12345/thisispassword)
@@ -53,6 +54,7 @@ How to use:
 *Password should be consisted with number and english alphabet*
 4. The ports of nc server are automatically added and set from 20000. If you want to use another port because of duplicate port, you must modify the port.txt file before the first run to set the port number to start. We recommend that you do not touch the port.txt file after it has been run once.
 5. Run the run.sh file.
+6. To Shutdown webserver process use kill.sh
 
 function:
 1. (host:12345/(contents of password.txt) => general binary (for example, http://test.com:12345/thisispassword)
