@@ -6,6 +6,9 @@ listallow=list(ascii_lowercase)
 listallow+=['_','-']
 listallow+=['1','2','3','4','5','6','7','8','9','0']
 
+password_allow = listallow
+password_allow += list(ascii_uppercase)
+
 print("DEVELOPER: SHIN JAE UK(Y311J)")
 print("Every Commercial Use without permission is banned")
 print("http://jaeuk.xyz")
@@ -17,8 +20,8 @@ try:
     password_file = open("./password.txt", 'r')
     password = str(password_file.read())
     password = password.replace("\n", "")
-    if password not in allowlist:
-        print("Error: Only Lower Letter and Numbers are allowed for Password")
+    if password not in password_allow:
+        print("Error: Only English Letter and Numbers are allowed for Password")
         exit(0)
     password="/"+password
     password_file.close()
