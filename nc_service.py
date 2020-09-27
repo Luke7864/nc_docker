@@ -50,7 +50,7 @@ def connect():
         try:
             for i in range(len(name)):
                 if list(name)[i] not in listallow:
-                    return "NO Hack~~!, 특수문자/대문자 입력은 금지되어 있습니다."
+                    return "특수문자/대문자 입력은 금지되어 있습니다."
 
             probmake = subprocess.check_output(["mkdir /home/probs/"+name], shell=True)
             homemake = subprocess.check_output(["mkdir /home/probs/"+name+"/home"], shell=True)
@@ -139,7 +139,7 @@ def connect2():
         try:
             for i in range(len(name)):
                 if list(name)[i] not in listallow:
-                    return "NO Hack~~!, 특수문자/대문자 입력은 금지되어 있습니다."
+                    return "특수문자/대문자 입력은 금지되어 있습니다."
 
             probmake = subprocess.check_output(["mkdir /home/probs/"+name], shell=True)
             homemake = subprocess.check_output(["mkdir /home/probs/"+name+"/home"], shell=True)
@@ -232,7 +232,7 @@ def connect3():
         try:
             for i in range(len(name)):
                 if list(name)[i] not in listallow:
-                    return "NO Hack~~!, 특수문자/대문자 입력은 금지되어 있습니다."
+                    return "특수문자/대문자 입력은 금지되어 있습니다."
 
             probmake = subprocess.check_output(["mkdir /home/probs/"+name], shell=True)
             homemake = subprocess.check_output(["mkdir /home/probs/"+name+"/home"], shell=True)
@@ -321,7 +321,7 @@ def del_docker():
             docker_name = read_form('doc_name')
             for i in range(len(docker_name)):
                 if list(docker_name)[i] not in listallow:
-                    return "NO Hack~~!, 특수문자/대문자 입력은 금지되어 있습니다."
+                    return "특수문자/대문자 입력은 금지되어 있습니다."
         except:
             return '오류: 문제명 또는 도커 ID가 비어있습니다.'
 
