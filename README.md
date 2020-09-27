@@ -42,7 +42,7 @@ It is a web-based tool that automatically creates an nc server for the CTF and w
 <h1>Please read this description thoroughly before using it!</h1>
 
 This service has been tested using Ubuntu16.04LTS, and we recommend using an Ubuntu OS (at least a Debian OS).
-The image going up over the docker is Ubuntu16.04. On top of that the binary goes up and runs. In future updates, Ubuntu18 will also be available for selection.
+The image going up over the docker is Ubuntu16.04. On top of that the binary goes up and runs.
 
 How to use:  
 0. git clone https://github.com/Luke7864/nc_docker please.
