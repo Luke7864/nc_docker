@@ -23,6 +23,9 @@ try:
     if password not in password_allow:
         print("Error: Only English Letter and Numbers are allowed for Password")
         exit(0)
+    if len(password) < 10:
+        print("Error: Please Set Password more than 10 letters")
+        exit(0)
     password="/"+password
     password_file.close()
 
