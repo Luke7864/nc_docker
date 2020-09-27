@@ -17,11 +17,15 @@ try:
     password_file = open("./password.txt", 'r')
     password = str(password_file.read())
     password = password.replace("\n", "")
+    if password not in allowlist:
+        print("Error: Only Lower Letter and Numbers are allowed for Password")
+        exit(0)
     password="/"+password
     password_file.close()
 
 except:
     print("Error: No Password File")
+    exit(0)
 
 if password=='/default' or password=='/ ' or password=='/':
     print("Fatal Error!!")
