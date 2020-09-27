@@ -10,8 +10,8 @@ CTF와 워게임의 포너블 문제를 위한 nc서버를 자동으로 docker�
 0. git clone https://github.com/Luke7864/nc_docker 해주세요.
 1. install_requirement.sh파일을 이용하여 필수설정을 설치해줍니다.
 2. 만약 도커가 설치되어있지 않은 경우 docker_install.sh파일을 이용해 도커를 설치해 줍니다.
-3. password 파일을 이용하여 password를 설정해줍니다. 외부인의 접근을 방지하기 위해 password파일은 접속링크의 일부로 사용됩니다.
-*password파일은 반드시 영문 혹은 숫자로만 이루어져야 합니다!*
+3. password 파일을 이용하여 password를 설정해줍니다. 외부인의 접근을 방지하기 위해 password파일은 접속링크의 일부로 사용됩니다.<br>
+<strong><u>*password파일은 반드시 영문 혹은 숫자로만 이루어져야 합니다!*</u></strong>
 4. nc 서버의 포트는 20000번에서부터 자동으로 1씩 추가되며 설정됩니다. 만약 포트가 중복되는 등의 이유로 다른 포트를 사용하고 싶다면 반드시 최초 실행 전에 port.txt파일을 수정해 시작할 포트의 번호로 세팅해주셔야 합니다. 한 번이라도 실행이 된 이후에는 port.txt파일을 건드리지 않는 것을 권유해 드립니다.
 5. run.sh파일을 실행해 줍니다.
 
